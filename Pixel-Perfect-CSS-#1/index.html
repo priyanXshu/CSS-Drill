@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>#1 CSS Card</title>
+  </head>
+  <body>
+    <form>
+      <div class="main">
+        <div class="title">
+          <h1>Upload Files</h1>
+        </div>
+        <div class="container">
+          <div class="left">
+            <p>Authorization key</p>
+            <input type="password" />
+            <p>Title</p>
+            <input type="text" />
+            <p>Description</p>
+            <textarea
+              type="text"
+              placeholder="Description"
+              row="25"
+              cols="30"
+            ></textarea>
+          </div>
+          <div class="right">
+            <p>Tags (comma separated)</p>
+            <input type="text" placeholder="Tags (comma separated)" />
+            <p>Date</p>
+            <input type="text" placeholder="DD/MM/YYYY" />
+            <p>Software</p>
+            <select>
+              <option value="Sketch">Sketch</option>
+              <option value="Procreate">Procreate</option>
+              <option value="Fresco">Fresco</option>
+              <option value="Rebelle">Rebelle</option>
+            </select>
+            <div class="image-upload">
+              <div class="thumbnail">
+                <p>Thumbnail Image</p>
+                <input type="file" id="thumbail-btn" hidden />
+                <label for="thumbail-btn">Upload File</label>
+                <span id="file-chosen">No file chosen</span>
+              </div>
+              <div class="source">
+                <p>Souce File</p>
+                <input type="file" id="source-btn" hidden />
+                <label for="source-btn">Upload File</label>
+                <span id="file-chosen">No file chosen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+          <button>Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script>
+    document.querySelector("form").reset();
+  </script>
+</html>
